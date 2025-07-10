@@ -1,0 +1,11 @@
+# For Django
+*.pyc
+__pycache__/
+db.sqlite3
+/media/
+.env
+*.log
+
+# The other settings for VSCode、macOS 
+.vscode/
+.DS_Store
