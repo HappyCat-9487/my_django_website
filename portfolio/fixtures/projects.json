@@ -1,0 +1,22 @@
+[
+    {
+        "model": "portfolio.project",
+        "pk": 1,
+        "fields": {
+            "title": "AI classification example",
+            "description": "This is an image classification model using scikit-learn which is applied to classification tasks for dogs and cats.",
+            "demo_link": "https://github.com/example/ai-classifier",
+            "created_at": "2025-01-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "portfolio.project",
+        "pk": 2,
+        "fields": {
+            "title": "Data visualization dashboard",
+            "description": "Use Plotly + Django to build a interactive graphic display plateform.",
+            "demo_link": "https://github.com/example/data-dashbord",
+            "created_at": "2025-01-02T11:30:00Z"
+        }
+    }
+]
