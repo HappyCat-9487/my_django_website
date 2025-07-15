@@ -62,7 +62,20 @@ jobs:
       - name: Unzip artifact for deployment
         run: unzip release.zip
 
-      
+      - name: Set up Python version
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Migrate database
+        run: python manage.py migrate
+
+      - name: Load project data
+        run: python manage.py loaddata portfolio/fixtures/projects.json
+
       - name: Login to Azure
         uses: azure/login@v2
         with:
